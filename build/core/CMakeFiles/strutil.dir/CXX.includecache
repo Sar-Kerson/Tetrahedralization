@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sar/SarKerson/vtk/tetrahedron/core/strutil/include/strutil.h
+string
+-
+vector
+-
+sstream
+-
+iomanip
+-
+algorithm
+-
+
+/home/sar/SarKerson/vtk/tetrahedron/core/strutil/src/strutil.cpp
+../include/strutil.h
+/home/sar/SarKerson/vtk/tetrahedron/core/strutil/include/strutil.h
+
