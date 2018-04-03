@@ -1,3 +1,4 @@
+#pragma once
 #include <vtkCellPicker.h>
 #include <vtkIdTypeArray.h>
 #include <vtkProperty.h>
@@ -12,6 +13,7 @@
 #include <vtkUnstructuredGrid.h>
 #include <vtkRenderWindow.h>
 #include "vtkRenderWindowInteractor.h"
+
 // Catch mouse events
 class MouseInteractorStyle : public vtkInteractorStyleTrackballCamera
 {
@@ -20,10 +22,10 @@ class MouseInteractorStyle : public vtkInteractorStyleTrackballCamera
  
   MouseInteractorStyle();
  
-  virtual void OnLeftButtonDown();
+    virtual void OnLeftButtonDown();
  
-  vtkSmartPointer<vtkUnstructuredGrid> Data;
-  vtkSmartPointer<vtkDataSetMapper> selectedMapper;
-  vtkSmartPointer<vtkActor> selectedActor;
+    vtkSmartPointer<vtkUnstructuredGrid> Data;
+    vtkSmartPointer<vtkDataSetMapper> selectedMapper;
+    vtkSmartPointer<vtkActor> selectedActor;
  
 };

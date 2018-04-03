@@ -1,0 +1,17 @@
+
+
+# demo1: by_loading
+LINK_DIRECTORIES(${LIBRARY_OUTPUT_PATH})   # libs dir
+AUX_SOURCE_DIRECTORY(./by_loading DEMO1_CPP)
+ADD_EXECUTABLE(by_loading ${DEMO1_CPP})
+set (EXECUTABLE_OUTPUT_PATH "${EXECUTABLE_OUTPUT_PATH}" )
+
+TARGET_LINK_LIBRARIES(by_loading strutil ${VTK_LIBRARIES} cellPicker)
+
+# demo2: by_infile_method
+LINK_DIRECTORIES(${LIBRARY_OUTPUT_PATH})   # libs dir
+AUX_SOURCE_DIRECTORY(./by_infile_method DEMO2_CPP)
+ADD_EXECUTABLE(by_infile_method ${DEMO2_CPP})
+set (EXECUTABLE_OUTPUT_PATH "${EXECUTABLE_OUTPUT_PATH}" )
+
+TARGET_LINK_LIBRARIES(by_infile_method tetgen ${VTK_LIBRARIES} cellPicker)

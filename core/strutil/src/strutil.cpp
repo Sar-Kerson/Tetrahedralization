@@ -1,5 +1,3 @@
-#pragma once
-
 #include "../include/strutil.h"
 // declaration
 namespace strutil {
